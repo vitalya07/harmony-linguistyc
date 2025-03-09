@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="body__container">
-        <div class="modal">
-            <div class="modal__container">
-                <div class="modal__dialog">
-                    <div class="modal__dialog-top">
+        <div class="modal hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__content-top">
                         <div class="modal__close"></div>
                     </div>                    
                     <h2 class="modal__title"> Want to work with us?</h2>
@@ -41,9 +41,9 @@
                         <li class="header__item"><a href="#services" class="header__link">Services </a></li>
                         <li class="header__item"><a href="#features" class="header__link">Features</a></li>
                         <li class="header__item"><a href="#Contact us" class="header__link">Contact us</a></li>
-                        <button class="header__btn btn header__btn-list">Оставить заявку</button>
+                        <button data-modal class="header__btn btn header__btn-list">Leave a request</button>
                     </ul>
-                    <button class="header__btn btn">Оставить заявку</button>
+                    <button data-modal class="header__btn btn">Leave a request</button>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -53,6 +53,26 @@
                 
             </div>           
         </header>
+        <main class="content">
+            <article class="main">
+                <div class="container">
+                    <h2 class="main__subtitle">Navigating Success Together</h2>
+                    <h1 class="main__title">
+                        The Harmonious World of Language Services: Introducing Harmony Linguistics
+                    </h1>
+                    <p class="main__descr">At Harmony Linguistics, we're dedicated to empowering you with the tools, knowledge, and resources you need to transform your dreams into realities.</p>
+                    <div class="main__down">
+                        <button data-modal class="btn main__btn">request a Quote</button>
+                        <a href="#" class="main__link">
+                            <div class="main__link-info">Learn More</div>
+                            <div class="main__link-icon">
+                                <img src="icons/down_arrow.svg" alt="arrow-down">
+                            </div>                           
+                        </a>
+                    </div>
+                </div>                
+            </article>
+        </main>
     </div>
     <script src="js/script.js"></script>
 </body>

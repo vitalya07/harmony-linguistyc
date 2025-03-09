@@ -4,10 +4,8 @@
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 4;
-    visibility: hidden;
-    opacity: 0;
     transition: all .4s ease;
-    &__dialog {
+    &__content {
         max-width: 600px;
         min-height: 300px;
         margin: 50px auto;
@@ -109,10 +107,8 @@
     &__btn {
         width: 100%;
     }
-    &.active {
-        visibility: visible;
-        opacity: 1;
-        .modal__dialog {
+    &.show {
+        .modal__content {
             transform: scale(1);
         }
     }
