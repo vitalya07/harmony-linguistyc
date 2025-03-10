@@ -1,8 +1,15 @@
-// @media(max-width: 1200px) {
-//     .header {
-//         padding: 15px;
-//     }
-// }
+@media(max-width: 1200px) {
+    .about {
+        &__center {
+            &-img {
+                &--2 {
+                    width: 470px;
+                }
+               
+            }
+        }
+    }
+}
 @media(max-width: 993px) {
     .header {
         padding: 15px;
@@ -27,6 +34,34 @@
     .hamburger {
         display: flex;
     }
+    .about {
+        &__top {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__title {
+           text-align: center;
+        }
+        &__descr {
+            max-width: 745px;
+            margin: 0 auto;
+        }
+        &__information {
+            gap: 30px;
+            justify-content: center;
+        }
+        &__center {
+            &-img {
+                width: 100%;
+                &--2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 768px) {
     .header {
@@ -50,11 +85,55 @@
             line-height: 16px;
         }
     }
+    .about {
+        &__center {
+            &-wrapper {
+                gap: 20px;
+            }
+            &-img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+    
 }
 @media (max-width: 565px) {
     .main {
+        height: 105vh;
         &__down {
             flex-wrap: wrap;
         }
+    }
+    .about {
+        padding: 50px 15px;
+        &__top {
+            gap: 20px;
+        }
+        &__subtitle {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__information {
+            &-left {
+                justify-content: center;
+                row-gap: 40px;
+            }
+            &-box {
+                width: 190px;
+            }
+            &-value {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &-right {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }        
     }
 }
