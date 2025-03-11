@@ -55,9 +55,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
     //выпадающие элементы
     const servicesItem = document.querySelectorAll('.services__item');
 
+
     servicesItem.forEach((item) => {
         item.addEventListener('click', (e)=> {
-            item.classList.toggle('open')
+            if(e.target.classList.contains('services__item-box') || e.target.classList.contains('services__item-title') || e.target.classList.contains('services__item-plus') ) {
+                item.classList.toggle('open')
+            }            
         })
     })
     
