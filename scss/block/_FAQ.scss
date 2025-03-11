@@ -1,0 +1,39 @@
+.FAQ {
+    padding: 100px 15px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        grid-template-rows: minmax(360px, auto);
+        grid-auto-rows: minmax(360px, auto);
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__item {
+        // width: 360px;
+        // min-height: 369px;
+        padding: 15px 20px;
+        &-title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            color: $orangeColor;
+            margin-bottom: 26px;            
+        }
+        &-subtitle {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            color: $blackColor;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #bdbdbd;
+            margin-bottom: 15px;
+        }
+        &-response {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            color: $grayColor;
+        }
+    }
+}

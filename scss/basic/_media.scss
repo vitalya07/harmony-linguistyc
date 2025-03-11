@@ -154,10 +154,15 @@
             background-size: cover;
         }
     }
+    .footer {
+        &__wrapper {
+            gap: 15px;
+        }
+    }
 }
 @media (max-width: 565px) {
     .main {
-        height: 105vh;
+        height: 815px;
         &__down {
             flex-wrap: wrap;
         }
@@ -238,13 +243,18 @@
                 font-size: 20px;
             }
             &-service {
-                font-size: 8px;
+                font-size: 10px;
                 justify-content: start;
-                margin-left: 15px;
+                margin-left: 0;
             }
             &-descr {
                 max-width: 305px;
             }
+        }
+    }
+    .footer {
+        &__link {
+            font-size: 14px;
         }
     }
 }

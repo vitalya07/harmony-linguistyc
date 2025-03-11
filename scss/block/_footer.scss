@@ -1,0 +1,66 @@
+.footer {
+    padding: 50px 15px;
+    background-color: $blackWhiteColor;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $grayColor;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 380px;
+        color: $whiteColor;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content:'';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $grayColor;
+            transition: all .4s ease;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    &__link {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        color: $whiteColor;
+        transition: all .4 ease;
+        &:hover {
+            color: $orangeColor;
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $whiteColor;
+        }
+    }
+}

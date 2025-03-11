@@ -62,16 +62,17 @@
         .hamburger {
             span {
                 &:first-child {
-                    top: 0;
-                    left: 0;
+                    top: 50%;
+                    left: 50%;
                     transform: translate(-50%, -50%) rotate(45deg);
                 }
                 &:nth-child(2) {
-                    display: none;
+                    transform: translate(0, 0);
+                    opacity: 0;
                 }
                 &:last-child {
-                    top: 0;
-                    left: 0;
+                    top: 50%;
+                    left: 50%;
                     transform: translate(-50%, -50%) rotate(-45deg);
                 }
             }
