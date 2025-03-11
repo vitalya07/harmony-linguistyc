@@ -1,0 +1,53 @@
+.work {
+    padding: 0 15px ;
+    background-color: $blackWhiteColor;
+    &__container {
+        background-image: url('../img/bg2.jpg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 960px 100%;
+        padding: 150px 0;
+    }
+    &__title {
+        text-align: left;
+        color: $orangeColor;
+    }
+    &__subtitle {
+        text-align: left;
+        color: $whiteColor;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    &__descr {
+        color: $whiteColor;
+        text-align: left;
+        max-width: 483px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    &__description {
+        max-width: 413px;
+        color: $grayColor;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 45px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        &-img {
+            width: 15px;
+            height: 15px;
+            transform: rotate(-120deg);
+            transition: all .4s ease;
+        }
+        &:hover {
+            .work__btn-img {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

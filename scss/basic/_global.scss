@@ -29,3 +29,42 @@
     visibility: visible;
     opacity: 1;
 }
+.open {
+    .services__item-descr {
+        bottom: 135px;
+    }
+    .services__item-plus {
+        span {
+            &:nth-child(2) {
+                opacity: 0;
+            }
+        }
+    }
+}
+.title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $grayColor;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: $blackColor;
+    text-align: center;
+    max-width: 704px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $blackWhiteColor;
+    text-align: center;
+    margin-bottom: 80px;
+}

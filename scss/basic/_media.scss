@@ -9,6 +9,33 @@
             }
         }
     }
+    .services {
+        &__item {
+            &-info {
+                margin-bottom: 20px;
+            }
+            &-box {
+                gap: 35px;
+            }
+            &-descr {
+                bottom: 190px;
+                left: 50%;
+            }
+            &-service {
+                font-size: 12px;
+            }
+        }
+    }
+    .open {
+        .services__item-descr {
+            bottom: 150px;
+        }
+    }
+    .work {
+        &__container {
+            background-size: 760px 100%;
+        }
+    }
 }
 @media(max-width: 993px) {
     .header {
@@ -62,6 +89,22 @@
             }
         }
     }
+    .features {
+        &__descr {
+            margin-bottom: 20px;
+        }
+    }
+    .services {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .work {
+        &__container {
+            background-size: 560px 100%;
+        }
+    }
 }
 @media(max-width: 768px) {
     .header {
@@ -96,7 +139,21 @@
             }
         }
     }
-    
+    .features {
+        &__item {
+            padding: 20px;
+            width: 100%;
+            min-height: auto;
+        }
+    }
+    .work {
+        padding: 0 ;
+        &__container {
+            padding: 50px 15px;
+            background-image: url('../img/bg2-mobile.jpg');
+            background-size: cover;
+        }
+    }
 }
 @media (max-width: 565px) {
     .main {
@@ -104,6 +161,10 @@
         &__down {
             flex-wrap: wrap;
         }
+    }
+    .subtitle {
+        font-size: 25px;
+        line-height: 30px;
     }
     .about {
         padding: 50px 15px;
@@ -135,5 +196,55 @@
                 line-height: 20px;
             }
         }        
+    }
+    .services {
+        padding: 50px 15px;
+        &__item {
+            min-height: 620px;
+            padding: 20px 15px;
+            &-img {
+                height: 320px;
+            }
+            &-service {
+                font-size: 12px;
+            }
+            &-descr {
+                font-size: 12px;
+                left: 55%;
+            }
+        }
+    }
+    .open {
+        .services__item-descr {
+            bottom: 130px;
+        }
+    }
+}
+@media(max-width: 465px) {
+    .services {
+        &__item {
+            &-service {
+                font-size: 10px;
+                justify-content: start;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+@media(max-width: 365px) {
+    .services {
+        &__item {
+            &-title {
+                font-size: 20px;
+            }
+            &-service {
+                font-size: 8px;
+                justify-content: start;
+                margin-left: 15px;
+            }
+            &-descr {
+                max-width: 305px;
+            }
+        }
     }
 }

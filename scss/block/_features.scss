@@ -1,0 +1,91 @@
+.features {
+    padding: 100px 15px;
+    background-color: #f5f5f5;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        max-width: 704px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    &__descr {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 368px;
+        min-height: 403px;
+        padding: 120px 30px;
+        background-color: $whiteColor;
+        &:last-child {
+            background-color: $orangeColor;
+            padding: 40px 40px 70px 40px;
+        }
+        &-icon {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
+            margin-bottom: 20px;
+            &--last {
+                color: $whiteColor;
+            }
+        }
+        &-line {
+            width: 46px;
+            height: 5px;
+            background-color: $orangeColor;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        &-descr {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $grayColor;
+            text-align: center;
+            &--last {
+                color: #ffcfc0;
+                font-weight: 400;
+                margin-bottom: 45px;
+            }
+        }
+        &-subtitle {
+            color: #ffcfc0;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &-btn {
+            background-color: $whiteColor;
+            color: $blackColor;
+            font-weight: 700;
+            font-size: 16px;
+            display: block;
+            margin: 0  auto;
+            transition: all .4s ease;
+            &:hover {
+                background-color: $blackColor;
+                color: $whiteColor;
+            }
+        }
+    }
+}

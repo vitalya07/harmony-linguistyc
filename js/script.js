@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
     });
 
-    //навигация на мобилке
+    //навигация на мобилке и смена header
     const hamburger = document.querySelector('.hamburger'),
           header = document.querySelector('header');
     function openMenu() {
@@ -51,5 +51,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
             }
         })
     }
-    changeColorHeader()
+    changeColorHeader();
+    //выпадающие элементы
+    const servicesItem = document.querySelectorAll('.services__item');
+
+    servicesItem.forEach((item) => {
+        item.addEventListener('click', (e)=> {
+            item.classList.toggle('open')
+        })
+    })
+    
 })

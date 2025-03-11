@@ -2,6 +2,7 @@
     padding: 15px;
     position: fixed;
     width: 100%;
+    z-index: 3;
     &__wrapper {
         display: flex;
         align-items: center;
