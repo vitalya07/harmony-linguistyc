@@ -5,10 +5,14 @@
     position: fixed;
     z-index: 4;
     transition: all .4s ease;
-    &__content {
+    &__dialog {
         max-width: 600px;
-        min-height: 300px;
         margin: 50px auto;
+    }
+    &__content {
+        
+        min-height: 300px;
+        
         background-color: $whiteColor;
         padding: 20px 40px;
         position: relative;
