@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     function showThanksModal(message) {
         const prevModalDialog = document.querySelector('.modal__dialog');
 
-        prevModalDialog.classList.add('hide');
+        prevModalDialog.classList.add('exit');
         openModal();
 
         const thanksModal = document.createElement('div');
@@ -130,11 +130,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
         `;
         document.querySelector('.modal').append(thanksModal);
         setTimeout(()=> {
-            thanksModal.remove();
-            prevModalDialog.classList.add('show');
-            prevModalDialog.classList.remove('hide');
+            thanksModal.remove();            
+            prevModalDialog.classList.add('active');    
+            prevModalDialog.classList.remove('exit');       
             closeModal();
-        }, 4000)
+        }, 2000)
     };
     
 })

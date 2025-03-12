@@ -10,13 +10,15 @@ $data = json_decode($json, true); // Преобразование json
 
 // Данные
 $name = $data['name'];
-$tel = $data['tel'];
+$tel = $data['phone'];
+$email = $data['email'];
 $msg = $data['msg'];
 
 // Контент письма
 $title = 'Заявка с сайта'; // Название письма
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
         '<p>Телефон: <strong>'.$tel.'</strong></p>'.
+        '<p>Email: <strong>'.$email.'</strong></p>'.
         '<p>Сообщение: <strong>'.$msg.'</strong></p>';
 
 // Настройки PHPMailer
@@ -47,9 +49,11 @@ try {
   $mail->send('d');
 
   // Сообщение об успешной отправке
-  echo ('Сообщение отправлено успешно!');
+  // echo ('Сообщение отправлено успешно!');
+  echo json_encode(['message' => 'Сообщение отправлено успешно!']);
 
 } catch (Exception $e) {
   header('HTTP/1.1 400 Bad Request');
-  echo('Сообщение не было отправлено! Причина ошибки: {$mail->ErrorInfo}');
+  echo('Сообщение не было отправлено! Причина ошибки: ' . $mail->ErrorInfo);
+  // echo('Сообщение не было отправлено! Причина ошибки: {$mail->ErrorInfo}');
 }
